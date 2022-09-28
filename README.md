@@ -1,6 +1,6 @@
 # Flutter Work Utils
 
- Flutter Utils is a miscelaneous package with multiple utilities that can take out of thinking problems, or losing time building simple methods that should already exists in flutter
+ Flutter Utils is a miscelaneous package with multiple utilities that can take out of thinking how to solve problems or losing time building simple methods that should already exist in flutter
 
 ### Flutter Work Utils includes this packages
 
