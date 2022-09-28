@@ -2,6 +2,7 @@ import 'package:diacritic/diacritic.dart';
 
 extension StringExt on String {
   String get pertenence {
+    /// Will return the pertenence string of a word
     if (isEmpty) {
       return this;
     }
@@ -13,6 +14,7 @@ extension StringExt on String {
   }
 
   String get formattedSearchText {
+    /// Will return a string with no spaces, in lowercase and with no diacritics
     if (isEmpty) {
       return this;
     }
