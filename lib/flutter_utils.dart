@@ -6,6 +6,7 @@ export 'package:flutter_work_utils/utils/diggester.dart';
 export 'package:flutter_work_utils/utils/font_color_switcher.dart';
 export 'package:flutter_work_utils/utils/iterable.dart';
 export 'package:flutter_work_utils/utils/logger.dart';
+export 'package:flutter_work_utils/utils/map.dart';
 export 'package:flutter_work_utils/utils/nav_route.dart';
 export 'package:flutter_work_utils/utils/network_image.dart';
 export 'package:flutter_work_utils/utils/query_parameters.dart';
