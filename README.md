@@ -69,6 +69,20 @@
         - *printSuccess (Object)*
         - *printLog (Object)*
 
+- ***map***: An extension of Map with utils
+    - methods:
+        - *pprint*: Return a string of the map with a pretty printing
+            - e.g.
+                ```dart
+                    Map<String, dynamic> myMap = {"Hello": "There", "General": "Kenobi"}
+                    print (myMap.pprint); //will print
+                    /*
+                        Hello: There
+                        
+                        General: Kenobi
+                    */
+                ```
+
 - ***nav_route***: Contains a method to generate a uri route based on a string route and query parameters
     - e.g.
         ```dart
