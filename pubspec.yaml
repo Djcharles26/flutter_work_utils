@@ -1,8 +1,8 @@
-name: flutter_utils
-description: Flutter utils
-version: 0.0.1
+name: flutter_work_utils
+description: Flutter Work utils for a faster work, the best utilities set together in a simple package
+version: 0.0.2
 homepage: https://github.com/Djcharles26/
-repository: https://github.com/Djcharles26/flutter_utils.git
+repository: https://github.com/Djcharles26/flutter_work_utils.git
 
 environment:
   sdk: ">=2.17.0 < 3.0.0"

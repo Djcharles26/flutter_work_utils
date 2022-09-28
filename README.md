@@ -1,8 +1,8 @@
-# Flutter Utils
+# Flutter Work Utils
 
- Flutter Utils is a miscelaneous package with multiple utilities that can take out of thinking problems, or losing time building simple methods that should already exists in flutter
+ Flutter Utils is a miscelaneous package with multiple utilities that can take out of thinking how to solve problems or losing time building simple methods that should already exist in flutter
 
-### Flutter Utils includes this packages
+### Flutter Work Utils includes this packages
 
 - ***color_parse***: A method to parse hex color strings to Color objects.
     - e.g.
@@ -68,6 +68,20 @@
         - *printError (Object)*
         - *printSuccess (Object)*
         - *printLog (Object)*
+
+- ***map***: An extension of Map with utils
+    - methods:
+        - *pprint*: Return a string of the map with a pretty printing
+            - e.g.
+                ```dart
+                    Map<String, dynamic> myMap = {"Hello": "There", "General": "Kenobi"}
+                    print (myMap.pprint); //will print
+                    /*
+                        Hello: There
+                        
+                        General: Kenobi
+                    */
+                ```
 
 - ***nav_route***: Contains a method to generate a uri route based on a string route and query parameters
     - e.g.

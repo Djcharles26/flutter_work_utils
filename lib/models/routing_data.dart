@@ -5,13 +5,13 @@ class RoutingData {
   RoutingData({
     this.route,
     Map<String, String>? queryParameters,
-  }) : _queryParameters = queryParameters??{};
+  }) : _queryParameters = queryParameters ?? {};
 
   String get queryParameters => _queryParameters.toString();
 
   Map<String, String> get params => _queryParameters;
 
-  bool contains (String key) {
+  bool contains(String key) {
     return _queryParameters.containsKey(key);
   }
 
