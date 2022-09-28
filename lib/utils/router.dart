@@ -5,6 +5,7 @@ import 'package:flutter_work_utils/utils/query_parameters.dart';
 
 class NavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
+
   /// Key binded to material app, allow this class to control the app navigation in any moment of context
 
   Future<dynamic> navigateTo(String route,

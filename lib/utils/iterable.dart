@@ -24,7 +24,7 @@ extension IterableExt<T> on Iterable<T> {
     return retval;
   }
 
-  bool containsAny(Iterable<T> elements) { 
+  bool containsAny(Iterable<T> elements) {
     /// A method to check if at least one elements of a list exists in current list
     bool retval = false;
 
