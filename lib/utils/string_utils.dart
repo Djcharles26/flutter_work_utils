@@ -5,7 +5,7 @@ extension StringExt on String {
     if (isEmpty) {
       return this;
     }
-    if (this[0] == "s" ) {
+    if (this[0] == "s") {
       return substring(0, length - 1) + "'s";
     } else {
       return this + "'s";

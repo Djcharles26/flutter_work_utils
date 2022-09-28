@@ -1,12 +1,12 @@
 extension MapExt on Map {
-  T? getVal<T> (String key) {
+  T? getVal<T>(String key) {
     if (containsKey(key)) {
       return this[key] as T?;
     } else {
       return null;
     }
   }
-  
+
   String get pprint {
     String retval = "";
 

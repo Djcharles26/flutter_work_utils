@@ -2,7 +2,7 @@
 
 String colorText([String color = "reset"]) {
   String prefix = "\x1B";
-  switch(color.toLowerCase()){
+  switch (color.toLowerCase()) {
     case "red":
       return "$prefix[31m";
     case "yellow":
@@ -18,7 +18,7 @@ String colorText([String color = "reset"]) {
   }
 }
 
-void printWarning(Object? text){
+void printWarning(Object? text) {
   print("${colorText("yellow")}[WARNING]: $text${colorText()}");
 }
 

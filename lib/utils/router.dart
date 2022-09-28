@@ -6,7 +6,8 @@ import 'package:flutter_work_utils/utils/query_parameters.dart';
 class NavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
 
-  Future<dynamic> navigateTo(String route, {Map<String, dynamic>? queryParams, int removeUntil = -1}){
+  Future<dynamic> navigateTo(String route,
+      {Map<String, dynamic>? queryParams, int removeUntil = -1}) {
     String routeName = generateNavRoute(route, queryParams: queryParams);
     if (removeUntil > 0) {
       return navigatorKey.currentState!.pushReplacementNamed(routeName);
@@ -20,10 +21,11 @@ class NavigationService {
   }
 }
 
-String? getQueryParam (BuildContext context, String name){
-  RoutingData? routingData = ModalRoute.of(context)?.settings.name?.getRoutingData;
+String? getQueryParam(BuildContext context, String name) {
+  RoutingData? routingData =
+      ModalRoute.of(context)?.settings.name?.getRoutingData;
   if (routingData != null) {
-    return routingData [name];
+    return routingData[name];
   }
   return null;
-} 
+}

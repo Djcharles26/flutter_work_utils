@@ -24,12 +24,13 @@ extension DateString on DateTime {
   }
 }
 
-DateTime? dateTimefromMillisecondsNoZero (int? epoch, {bool defaultNow = false}) {
+DateTime? dateTimefromMillisecondsNoZero(int? epoch,
+    {bool defaultNow = false}) {
   DateTime? retval;
   if (epoch != null && epoch != 0) {
     retval = DateTime.fromMillisecondsSinceEpoch(epoch);
   } else if (defaultNow) {
-    retval = DateTime.now ();
+    retval = DateTime.now();
   }
   return retval;
 }

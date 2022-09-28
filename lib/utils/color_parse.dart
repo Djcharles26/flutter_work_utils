@@ -1,13 +1,13 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 Color? colorFromString(String? colorString) {
-  /// Parse a color in hex format to [Color?] class. 
-  /// 
-  if(colorString == null) return null;
+  /// Parse a color in hex format to [Color?] class.
+  ///
+  if (colorString == null) return null;
   return Color(_hexToInt(colorString.toUpperCase()));
 }
 
-int _hexToInt(String hex){
+int _hexToInt(String hex) {
   int val = 0;
   int len = hex.length;
   for (int i = 0; i < len; i++) {
