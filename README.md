@@ -1,8 +1,8 @@
-# Flutter Utils
+# Flutter Work Utils
 
  Flutter Utils is a miscelaneous package with multiple utilities that can take out of thinking problems, or losing time building simple methods that should already exists in flutter
 
-### Flutter Utils includes this packages
+### Flutter Work Utils includes this packages
 
 - ***color_parse***: A method to parse hex color strings to Color objects.
     - e.g.

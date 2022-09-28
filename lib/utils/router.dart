@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_utils/models/routing_data.dart';
-import 'package:flutter_utils/utils/nav_route.dart';
-import 'package:flutter_utils/utils/query_parameters.dart';
+import 'package:flutter_work_utils/models/routing_data.dart';
+import 'package:flutter_work_utils/utils/nav_route.dart';
+import 'package:flutter_work_utils/utils/query_parameters.dart';
 
 class NavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
