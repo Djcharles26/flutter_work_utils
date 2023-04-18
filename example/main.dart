@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             children: [
               Text(
                 DateTime.now().dateString, //dates
-                style: Theme.of(context).textTheme.headline3!.copyWith(
+                style: Theme.of(context).textTheme.displaySmall!.copyWith(
                     color: getColorContrast(// font_color_switcher
                         colorFromString("ff000000")! // color_parse
                         )),
@@ -28,14 +28,14 @@ class MyApp extends StatelessWidget {
                 "hola12".diggest, //diggester
                 style: Theme.of(context)
                     .textTheme
-                    .headline3!
+                    .displaySmall!
                     .copyWith(color: getColorContrast(// color_parse
-                        Theme.of(context).backgroundColor)),
+                        Theme.of(context).colorScheme.background)),
               ),
               ElevatedButton(
                 child: Text(
                   "Unfocus",
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 onPressed: () => unfocus(context), // unfocus
               ),
