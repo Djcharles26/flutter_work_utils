@@ -14,3 +14,11 @@
 - Temporaly commented body utils tests 🎚
 - Formatted code along the project ⛓
 - Added documentation in methods ❇️
+
+## 0.1.0
+- Updated scroll configuration settings 📦
+- Added new string utils ❇️
+- Added new number utils ❇️
+- Updated dates utils 📦
+- Added duration utils ❇️
+- Updated packages 📦
