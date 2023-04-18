@@ -7,9 +7,9 @@ extension StringExt on String {
       return this;
     }
     if (this[0] == "s") {
-      return substring(0, length - 1) + "'s";
+      return "${substring(0, length - 1)}'s";
     } else {
-      return this + "'s";
+      return "$this's";
     }
   }
 
@@ -20,5 +20,22 @@ extension StringExt on String {
     }
 
     return removeDiacritics(toLowerCase().replaceAll(" ", ""));
+  }
+
+  String capitalize() {
+    return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
+  }
+
+  String get capitalizeAllWords {
+    String value = this;
+    var result = value[0].toUpperCase();
+    for (int i = 1; i < value.length; i++) {
+      if (value[i - 1] == " ") {
+        result = result + value[i].toUpperCase();
+      } else {
+        result = result + value[i];
+      }
+    }
+    return result;
   }
 }
