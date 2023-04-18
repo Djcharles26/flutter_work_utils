@@ -27,6 +27,14 @@ extension DateString on DateTime {
     /// Return test formatted MMM
     return DateFormat("MMM").format(this);
   }
+
+  String dayNameTimeString (String locale) {
+    DateFormat format = DateFormat (
+      "EEE, d - hh:mm", locale
+    );
+
+    return format.format(this);
+  }
 }
 
 DateTime? dateTimefromMillisecondsNoZero(int? epoch,
