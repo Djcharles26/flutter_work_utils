@@ -66,4 +66,12 @@ extension IterableExt<T> on Iterable<T> {
 
     return appliedValues;
   }
+  
+  T? get getFirst {
+    if (isEmpty) {
+      return null;
+    } else {
+      return first;
+    }
+  }
 }
