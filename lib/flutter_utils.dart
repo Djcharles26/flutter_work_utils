@@ -15,5 +15,6 @@ export 'package:flutter_work_utils/utils/number.dart';
 export 'package:flutter_work_utils/utils/query_parameters.dart';
 export 'package:flutter_work_utils/utils/router.dart';
 export 'package:flutter_work_utils/utils/scroll_configuration.dart';
+export 'package:flutter_work_utils/utils/sizes.dart';
 export 'package:flutter_work_utils/utils/string_utils.dart';
 export 'package:flutter_work_utils/utils/unfocus.dart';
