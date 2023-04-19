@@ -22,3 +22,6 @@
 - Updated dates utils 📦
 - Added duration utils ❇️
 - Updated packages 📦
+
+## 0.1.1
+- Added sizes utils ❇️

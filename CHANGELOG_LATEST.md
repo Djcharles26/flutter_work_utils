@@ -1,6 +1,1 @@
-- Updated scroll configuration settings 📦
-- Added new string utils ❇️
-- Added new number utils ❇️
-- Updated dates utils 📦
-- Added duration utils ❇️
-- Updated packages 📦
+- Added sizes utils ❇️
