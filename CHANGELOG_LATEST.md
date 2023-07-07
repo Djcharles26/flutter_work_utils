@@ -1,1 +1,2 @@
-- Added sizes utils ❇️
+- Updated dates to enable locale configuration ⬆️
+- Added global configuration ❇️
