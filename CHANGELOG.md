@@ -26,6 +26,6 @@
 ## 0.1.1
 - Added sizes utils ❇️
 
-## 0.2
+## 0.2.0
 - Updated dates to enable locale configuration
 - Added global configuration
