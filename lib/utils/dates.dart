@@ -1,36 +1,70 @@
+import 'package:flutter_work_utils/models/configuration.dart';
+import 'package:flutter_work_utils/utils/configuration.dart';
 import 'package:intl/intl.dart';
+
+UtilsConfiguration configuration = UtilsManager().configuration;
+
+String getTimeFormat ({bool includeSeconds = false}) {
+  String time;
+  if (configuration.millitaryFormat) {
+    time = "HH";
+  } else {
+    time = "hh";
+  }
+
+  time += ":mm";
+
+  if (includeSeconds) {
+    time += ":ss";
+  }
+
+  if (!configuration.millitaryFormat) {
+    time += " a";
+  }
+
+  return time;
+}
 
 extension DateString on DateTime {
   String get dateTimeString {
     /// Return test formatted dd-MM-yyyy hh:mm
-    DateFormat format = DateFormat("dd-MM-yyyy hh:mm");
-    return format.format(this);
+    
+    String time = getTimeFormat ();
+    
+    DateFormat dateFormat = DateFormat.yMd(configuration.locale);
+    return "${dateFormat.format(this)}" 
+    " ${DateFormat(time, configuration.locale).format(this)}";
   }
 
   String get dateTimeSecondString {
+    String time = getTimeFormat (includeSeconds: true);
     /// Return date formatted dd-MM-yyyy hh:mm:ss
-    DateFormat format = DateFormat("dd-MM-yyyy hh:mm:ss");
-    return format.format(this);
+    DateFormat format = DateFormat.yMd (configuration.locale);
+    return "${format.format(this)}"
+    " ${DateFormat(time, configuration.locale).format(this)}";
   }
 
   String get dateString {
     /// Return date formatted dd-MM-yyyy
-    return DateFormat(DateFormat.YEAR_ABBR_MONTH_DAY).format(this);
+    return DateFormat.yMd (configuration.locale).format(this);
   }
 
   String get hourString {
-    /// Return date formatted hh:mm
-    return DateFormat(DateFormat.HOUR24_MINUTE).format(this);
+    String time = getTimeFormat();
+    /// Return date formatted HH:mm
+    return DateFormat(time, configuration.locale).format(this);
   }
 
   String get monthAbbr {
     /// Return test formatted MMM
-    return DateFormat("MMM").format(this);
+    return DateFormat("MMM", configuration.locale).format(this);
   }
 
   String dayNameTimeString (String locale) {
+    String time = getTimeFormat ();
+
     DateFormat format = DateFormat (
-      "EEE, d - hh:mm", locale
+      "EEE, d - $time", locale
     );
 
     return format.format(this);
