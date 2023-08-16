@@ -1,21 +1,40 @@
 // ignore_for_file: avoid_print
+import 'dart:io' show Platform;
 
 String colorText([String color = "reset"]) {
   /// Get color text ASCII codes
-  String prefix = "\x1B";
-  switch (color.toLowerCase()) {
-    case "red":
-      return "$prefix[31m";
-    case "yellow":
-      return "$prefix[33m";
-    case "green":
-      return "$prefix[32m";
-    case "blue":
-      return "$prefix[34m";
-    case "reset":
-      return "$prefix[0m";
-    default:
-      return "$prefix[0m";
+  /// 
+  if (Platform.isIOS || Platform.isMacOS) {
+    switch (color.toLowerCase()) {
+      case "red":
+        return "🟥";
+      case "yellow":
+        return "🟨";
+      case "green":
+        return "🟩";
+      case "blue":
+        return "🟦";
+      case "reset":
+        return "";
+      default:
+        return "";
+    }
+  } else {
+    String prefix = "\x1B";
+    switch (color.toLowerCase()) {
+      case "red":
+        return "$prefix[31m";
+      case "yellow":
+        return "$prefix[33m";
+      case "green":
+        return "$prefix[32m";
+      case "blue":
+        return "$prefix[34m";
+      case "reset":
+        return "$prefix[0m";
+      default:
+        return "$prefix[0m";
+    }
   }
 }
 
