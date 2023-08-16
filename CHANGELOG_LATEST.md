@@ -1,2 +1,1 @@
-- Updated dates to enable locale configuration ⬆️
-- Added global configuration ❇️
+- Updated how colors for logs are set for OSX distributions ⬆️

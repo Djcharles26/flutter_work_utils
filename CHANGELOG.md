@@ -29,3 +29,6 @@
 ## 0.2.0
 - Updated dates to enable locale configuration
 - Added global configuration
+
+## 0.2.1
+- Updated how colors for logs are set for OSX distributions
