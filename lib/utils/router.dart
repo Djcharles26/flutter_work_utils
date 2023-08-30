@@ -34,3 +34,20 @@ String? getQueryParam(BuildContext context, String name) {
   }
   return null;
 }
+
+bool checkQueryParams (BuildContext context, Iterable<String> params) {
+  RoutingData? routingData =
+      ModalRoute.of(context)?.settings.name?.getRoutingData;
+
+  if (routingData != null) {
+    for (String param in params) {
+      if (!routingData.contains(param)){
+        return false;
+      }
+    }
+  } else {
+    return false;
+  }
+
+  return true;
+}
