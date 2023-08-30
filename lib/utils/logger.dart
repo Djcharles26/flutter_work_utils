@@ -2,9 +2,14 @@
 import 'dart:io' show Platform;
 
 String colorText([String color = "reset"]) {
+  bool isIOs = false;
+
+  try {
+    isIOs = Platform.isIOS || Platform.isMacOS;
+  } catch (_) {}
   /// Get color text ASCII codes
   /// 
-  if (Platform.isIOS || Platform.isMacOS) {
+  if (isIOs) {
     switch (color.toLowerCase()) {
       case "red":
         return "🟥";

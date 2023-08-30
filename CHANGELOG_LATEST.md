@@ -1,1 +1,2 @@
-- Updated how colors for logs are set for OSX distributions ⬆️
+- Fixed bugs with flutter web development
+- Added check query params method in router utils
