@@ -36,3 +36,8 @@
 ## 0.2.2
 - Fixed bugs with flutter web development
 - Added check query params method in router utils
+
+## 0.2.3
+- Updated flutter versions
+- Added new methods in colors
+- Fixed iterable methods

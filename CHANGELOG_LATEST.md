@@ -1,2 +1,3 @@
-- Fixed bugs with flutter web development
-- Added check query params method in router utils
+- Updated flutter versions
+- Added new methods in colors
+- Fixed iterable methods
