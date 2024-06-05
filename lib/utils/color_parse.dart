@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 Color? colorFromString(String? colorString) {
@@ -25,4 +27,13 @@ int _hexToInt(String hex) {
     }
   }
   return val;
+}
+
+Color getRandomColor () {
+  Random random = Random();
+  return Color.fromRGBO(
+    random.nextInt(255), 
+    random.nextInt(255), 
+    random.nextInt(255), 1.0
+  );
 }
