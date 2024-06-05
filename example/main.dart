@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                     .textTheme
                     .displaySmall!
                     .copyWith(color: getColorContrast(// color_parse
-                        Theme.of(context).colorScheme.background)),
+                        Theme.of(context).colorScheme.surface)),
               ),
               ElevatedButton(
                 child: Text(
