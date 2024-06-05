@@ -5,6 +5,9 @@ extension IterableExt<T> on Iterable<T> {
 
     forEach((element) {
       retval = retval || lambda(element);
+      if (retval) {
+        return;
+      }
     });
 
     return retval;
