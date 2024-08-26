@@ -1,3 +1,1 @@
-- Updated flutter versions
-- Added new methods in colors
-- Fixed iterable methods
+- Updated how color is parsed to use alpha value
