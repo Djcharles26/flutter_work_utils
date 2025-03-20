@@ -1,1 +1,2 @@
-- Updated how color is parsed to use alpha value
+- Updated dependencies
+- Fixed values with new configurations

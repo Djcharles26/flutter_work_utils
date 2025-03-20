@@ -1,4 +1,4 @@
-library flutter_work_utils;
+library;
 
 export 'package:flutter_work_utils/utils/color_parse.dart';
 export 'package:flutter_work_utils/utils/dates.dart';

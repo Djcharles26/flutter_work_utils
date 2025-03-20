@@ -29,3 +29,9 @@ Color getRandomColor () {
     random.nextInt(255), 1.0
   );
 }
+
+extension ColorExt on Color {
+  Color withOpacityA (double opacity) {
+    return withAlpha((255 * opacity).floor());
+  }
+}

@@ -44,3 +44,7 @@
 
 ## 0.2.4
 - Updated how color is parsed to use alpha value
+
+## 0.2.5
+- Updated dependencies
+- Fixed values with new configurations
