@@ -1,2 +1,1 @@
-- Updated dependencies
-- Fixed values with new configurations
+- Updated logger to show messages only in debug mode
