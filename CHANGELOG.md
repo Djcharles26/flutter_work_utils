@@ -48,3 +48,6 @@
 ## 0.2.5
 - Updated dependencies
 - Fixed values with new configurations
+
+## 0.2.6
+- Updated logger to show messages only in debug mode
